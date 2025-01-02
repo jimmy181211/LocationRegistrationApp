@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/back"
+        style="@style/back_style"
+        app:title="register"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/login_bg_img"/>
+
+    <TextView
+        style="@style/login_title_style"
+        android:text="@string/register"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_margin="28dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content" >
+
+<!--       input box logic for username-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/input_box_style">
+
+            <ImageView
+                style="@style/input_box_img_style"
+                android:src="@drawable/baseline_account_box_24" />
+
+            <EditText
+                android:id="@+id/uname"
+                style="@style/edit_text_style"
+                android:hint="@string/enter_username"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+<!--        input box logic for password-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/input_box_style">
+
+            <ImageView
+                style="@style/input_box_img_style"
+                android:src="@drawable/baseline_password_24"/>
+
+            <EditText
+                android:id="@+id/pwd1"
+                style="@style/edit_text_style"
+                android:hint="@string/enter_password"
+                android:inputType="textPassword"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!--  input box logic for password confirmation-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/input_box_style">
+
+            <ImageView
+                style="@style/input_box_img_style"
+                android:src="@drawable/baseline_password_24"/>
+
+            <EditText
+                android:id="@+id/pwd2"
+                style="@style/edit_text_style"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+<!--        input box logic for email address-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/input_box_style">
+
+            <ImageView
+                style="@style/input_box_img_style"
+                android:src="@drawable/baseline_email_24"/>
+
+            <EditText
+                android:id="@+id/email"
+                style="@style/edit_text_style"
+                android:hint="@string/enter_email"
+                android:inputType="textEmailAddress"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+<!--        input box logic for age-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/input_box_style">
+
+            <ImageView
+                style="@style/input_box_img_style"
+                android:src="@drawable/baseline_man_24"/>
+
+            <EditText
+                android:id="@+id/age"
+                style="@style/edit_text_style"
+                android:hint="@string/enter_your_age"
+                android:inputType="number"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!--    input box logic for phone number-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/input_box_style">
+
+            <ImageView
+                style="@style/input_box_img_style"
+                android:src="@drawable/baseline_phone_24"/>
+
+            <EditText
+                android:id="@+id/phone_no"
+                style="@style/edit_text_style"
+                android:hint="@string/enter_phone_no"
+                android:inputType="phone|number"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--register button logic-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/registerBtn"
+        android:layout_marginTop="70dp"
+        android:text="@string/register"
+        style="@style/login_button_style"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

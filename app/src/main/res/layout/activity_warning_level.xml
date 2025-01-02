@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".WarningLevelActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/back"
+        style="@style/back_style"
+        app:title="warning level explanation"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="4"
+        android:layout_margin="10dp"
+        android:text="@string/warning_level_overview"
+        android:textSize="14sp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        style="@style/warning_level_layout_style">
+
+        <ImageView
+            style="@style/warning_level_color_style"
+            android:background="@color/warning_level3"/>
+
+        <TextView
+            style="@style/warning_level_text_style"
+            android:text="@string/highest_warning_level"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        style="@style/warning_level_layout_style">
+
+        <ImageView
+            style="@style/warning_level_color_style"
+            android:background="@color/warning_level2"/>
+
+        <TextView
+            style="@style/warning_level_text_style"
+            android:text="@string/second_highest_warning_level"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        style="@style/warning_level_layout_style">
+
+        <ImageView
+            style="@style/warning_level_color_style"
+            android:background="@color/warning_level1"/>
+
+        <TextView
+            style="@style/warning_level_text_style"
+            android:text="@string/first_warning_level"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</LinearLayout>

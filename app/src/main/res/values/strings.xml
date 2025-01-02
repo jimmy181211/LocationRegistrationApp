@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">My SignIn</string>
+    <string name="a_text_here">a text here</string>
+    <string name="button">button</string>
+    <string name="login">login</string>
+    <string name="register">register</string>
+    <string name="enter_username">enter username:</string>
+    <string name="enter_password">enter password:</string>
+    <string name="not_registered">not registered? click here!</string>
+    <string name="enter_email">enter email:</string>
+    <string name="enter_your_age">enter your age:</string>
+    <string name="confirm_password">confirm password:</string>
+    <string name="select_image">select an image</string>
+    <string name="confirm">confirm</string>
+    <string name="enter_the_new_username">enter the new username:</string>
+    <string name="set_new_username">set new username:</string>
+    <string name="sign_out">sign out</string>
+    <string name="warning_level_overview">warning level is calculated based on the number of time you missed signing in. Only houseparents have administrative access to it</string>
+    <string name="highest_warning_level">Highest warning level: you are one of the most important students in houseparents\' list, and you don\'t have any app privileges</string>
+    <string name="second_highest_warning_level">Second highest warning level: you begin to lose some app privileges</string>
+    <string name="first_warning_level">First warning_level: the houseparents start to pay attention to you</string>
+    <string name="set_alarm">set alarm</string>
+    <string name="enter_phone_no">enter your phone number(UK):</string>
+</resources>

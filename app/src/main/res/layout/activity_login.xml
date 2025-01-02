@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/back"
+        style="@style/back_style"
+        app:title="@string/login"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/login_bg_img"/>
+
+    <TextView
+        style="@style/login_title_style"
+        android:text="@string/login"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_margin="28dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+<!--        input box logic for username-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/input_box_style">
+
+            <ImageView
+                style="@style/input_box_img_style"
+                android:src="@drawable/baseline_account_box_24"/>
+
+            <EditText
+                android:id="@+id/uname"
+                style="@style/edit_text_style"
+                android:hint="@string/enter_username"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+<!--        input box logic for password-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/input_box_style">
+
+            <ImageView
+                style="@style/input_box_img_style"
+                android:src="@drawable/baseline_password_24" />
+
+            <EditText
+                android:id="@+id/pwd"
+                style="@style/edit_text_style"
+                android:hint="@string/enter_password"
+                android:inputType="textPassword"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/notRegistered"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/not_registered"/>
+
+<!--    login button design-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginBtn"
+        android:layout_marginTop="110dp"
+        android:text="@string/login"
+        style="@style/login_button_style"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
